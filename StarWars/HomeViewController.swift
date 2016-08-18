@@ -83,7 +83,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             for person in people {
               guard let personDict = person as? NSDictionary else { continue }
               guard let name = personDict["name"] as? String else { continue }
-              self.characters.append(Character(name: name))
+              guard let homeworld = personDict["homeworld"] as? String else { continue }
+              self.characters.append(Character(name: name, homeworld: homeworld))
             }
             
             dispatch_async(dispatch_get_main_queue()) {
@@ -148,21 +149,16 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     return cell
   }
-//  
-//  func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//    let detail = self.storyboard!.instantiateViewControllerWithIdentifier("detailViewController") as! DetailViewController
-//    
-//    self.navigationController?.pushViewController(detail, animated: true)
-//    
-//    detail.getData = { [ weak self ] in
-//      return self!.guests[ indexPath.row ]
-//    }
-//    
-//    detail.updateData = { [ weak self ] (guest: Guest) in
-//      self!.guests[indexPath.row] = guest
-//      self?.tableView?.reloadData()
-//    }
-//  }
+  
+  func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    let detail = self.storyboard!.instantiateViewControllerWithIdentifier("characterViewController") as! CharacterViewController
+    
+    self.navigationController?.pushViewController(detail, animated: true)
+    
+    detail.getData = { [ weak self ] in
+      return self!.characters[ indexPath.row ]
+    }
+  }
   
   func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
     return "Star Wars API"

@@ -14,6 +14,7 @@
 		522788EF1D65489500675886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522788ED1D65489500675886 /* LaunchScreen.storyboard */; };
 		522788F71D654D3200675886 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522788F61D654D3200675886 /* Character.swift */; };
 		522788F91D654E0E00675886 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522788F81D654E0E00675886 /* CharacterTableViewCell.swift */; };
+		522788FB1D65659400675886 /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522788FA1D65659400675886 /* CharacterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		522788F01D65489500675886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		522788F61D654D3200675886 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		522788F81D654E0E00675886 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
+		522788FA1D65659400675886 /* CharacterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				522788F01D65489500675886 /* Info.plist */,
 				522788F61D654D3200675886 /* Character.swift */,
 				522788F81D654E0E00675886 /* CharacterTableViewCell.swift */,
+				522788FA1D65659400675886 /* CharacterViewController.swift */,
 			);
 			path = StarWars;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				522788F71D654D3200675886 /* Character.swift in Sources */,
+				522788FB1D65659400675886 /* CharacterViewController.swift in Sources */,
 				522788E71D65489500675886 /* HomeViewController.swift in Sources */,
 				522788E51D65489500675886 /* AppDelegate.swift in Sources */,
 				522788F91D654E0E00675886 /* CharacterTableViewCell.swift in Sources */,

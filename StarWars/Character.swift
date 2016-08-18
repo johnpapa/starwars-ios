@@ -10,8 +10,10 @@ import Foundation
 
 class Character {
   var name: String
+  var homeworld: String
   
-  init(name: String) {
+  init(name: String, homeworld: String) {
     self.name = name
+    self.homeworld = homeworld
   }
 }
