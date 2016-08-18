@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		522788E51D65489500675886 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522788E41D65489500675886 /* AppDelegate.swift */; };
-		522788E71D65489500675886 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522788E61D65489500675886 /* ViewController.swift */; };
+		522788E71D65489500675886 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522788E61D65489500675886 /* HomeViewController.swift */; };
 		522788EA1D65489500675886 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522788E81D65489500675886 /* Main.storyboard */; };
 		522788EC1D65489500675886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522788EB1D65489500675886 /* Assets.xcassets */; };
 		522788EF1D65489500675886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522788ED1D65489500675886 /* LaunchScreen.storyboard */; };
+		522788F71D654D3200675886 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522788F61D654D3200675886 /* Character.swift */; };
+		522788F91D654E0E00675886 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522788F81D654E0E00675886 /* CharacterTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		522788E11D65489500675886 /* StarWars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		522788E41D65489500675886 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		522788E61D65489500675886 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		522788E61D65489500675886 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		522788E91D65489500675886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		522788EB1D65489500675886 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		522788EE1D65489500675886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		522788F01D65489500675886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		522788F61D654D3200675886 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		522788F81D654E0E00675886 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				522788E41D65489500675886 /* AppDelegate.swift */,
-				522788E61D65489500675886 /* ViewController.swift */,
+				522788E61D65489500675886 /* HomeViewController.swift */,
 				522788E81D65489500675886 /* Main.storyboard */,
 				522788EB1D65489500675886 /* Assets.xcassets */,
 				522788ED1D65489500675886 /* LaunchScreen.storyboard */,
 				522788F01D65489500675886 /* Info.plist */,
+				522788F61D654D3200675886 /* Character.swift */,
+				522788F81D654E0E00675886 /* CharacterTableViewCell.swift */,
 			);
 			path = StarWars;
 			sourceTree = "<group>";
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				522788E71D65489500675886 /* ViewController.swift in Sources */,
+				522788F71D654D3200675886 /* Character.swift in Sources */,
+				522788E71D65489500675886 /* HomeViewController.swift in Sources */,
 				522788E51D65489500675886 /* AppDelegate.swift in Sources */,
+				522788F91D654E0E00675886 /* CharacterTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
