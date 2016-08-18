@@ -22,13 +22,45 @@ class CharacterViewController: UIViewController {
     if let closure = self.getData {
       character = closure()
       self.nameLabel.text = character!.name
-      self.homeworldLabel.text = character!.homeworld
+      self.homeworldLabel.text = ""
+      getHomeworld()
     }
   }
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
+  }
+  
+  func getHomeworld() {
+    let url = NSURL(string: character!.homeworld)!
+    let session = NSURLSession.sharedSession()
+    let task = session.dataTaskWithURL(url) { (data, response, error) in
+      if let response = response {
+        print("Data encoding: \(response.textEncodingName)")
+      }
+      if let error = error {
+        NSLog("Got an error!: \(error.localizedDescription)")
+        return
+      }
+      
+      if let data = data {
+        NSLog("Got \(data.length) bytes.")
+        let httpResponse = response as! NSHTTPURLResponse
+        let statusCode = httpResponse.statusCode
+        
+        if (statusCode == 200) {
+          let possibleJson = JSONParser.parseJson(data)
+          if let json = possibleJson {
+            guard let homeworld = json["name"] as? String else { return }
+            dispatch_async(dispatch_get_main_queue()) {
+              self.homeworldLabel.text = homeworld
+            }
+          }
+        }
+      }
+    }
+    task.resume()
   }
   
   /*

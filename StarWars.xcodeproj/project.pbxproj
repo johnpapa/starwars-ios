@@ -15,6 +15,7 @@
 		522788F71D654D3200675886 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522788F61D654D3200675886 /* Character.swift */; };
 		522788F91D654E0E00675886 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522788F81D654E0E00675886 /* CharacterTableViewCell.swift */; };
 		522788FB1D65659400675886 /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522788FA1D65659400675886 /* CharacterViewController.swift */; };
+		522788FD1D656C3A00675886 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522788FC1D656C3A00675886 /* JSONParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		522788F61D654D3200675886 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		522788F81D654E0E00675886 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		522788FA1D65659400675886 /* CharacterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
+		522788FC1D656C3A00675886 /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				522788F61D654D3200675886 /* Character.swift */,
 				522788F81D654E0E00675886 /* CharacterTableViewCell.swift */,
 				522788FA1D65659400675886 /* CharacterViewController.swift */,
+				522788FC1D656C3A00675886 /* JSONParser.swift */,
 			);
 			path = StarWars;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			files = (
 				522788F71D654D3200675886 /* Character.swift in Sources */,
 				522788FB1D65659400675886 /* CharacterViewController.swift in Sources */,
+				522788FD1D656C3A00675886 /* JSONParser.swift in Sources */,
 				522788E71D65489500675886 /* HomeViewController.swift in Sources */,
 				522788E51D65489500675886 /* AppDelegate.swift in Sources */,
 				522788F91D654E0E00675886 /* CharacterTableViewCell.swift in Sources */,

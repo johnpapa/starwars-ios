@@ -73,7 +73,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
           print("Status code = \(statusCode)")
           print("Everyone is fine, json downloaded successfully.")
           
-          let possibleJson = self.parseJson(data)
+          let possibleJson = JSONParser.parseJson(data)
           if let json = possibleJson {
             self.characters = []
             print(json["results"])
@@ -110,23 +110,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
       }
     }
     task.resume()
-  }
-  
-  func parseJson(data: NSData) -> [String: AnyObject]? {
-    let options = NSJSONReadingOptions()
-    do {
-      let json = try NSJSONSerialization.JSONObjectWithData(data, options: options) as? [String: AnyObject]
-      if let json = json {
-        print("*** Here is the JSON")
-        print(json)
-        print("*** ***")
-      }
-      return json
-    }
-    catch (let parsingError) {
-      print(parsingError)
-    }
-    return nil
   }
   
   func numberOfSectionsInTableView(tableView: UITableView) -> Int {
